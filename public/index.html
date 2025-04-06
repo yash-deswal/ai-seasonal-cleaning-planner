@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Seasonal Cleaning Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="app-title">
+                <i class="fas fa-broom"></i>
+                <h1>Cleaning Planner</h1>
+            </div>
+            <button id="new-chat-btn" class="new-chat-btn">
+                <i class="fas fa-plus"></i> New Chat
+            </button>
+            <div class="chat-history-section">
+                <h3>Previous Chats</h3>
+                <div id="chat-history-list" class="chat-history-list">
+                    <!-- Chat history items will be added here -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="chat-header">
+                <h2>AI Seasonal Cleaning Planner</h2>
+                <div class="season-indicator">
+                    <span id="current-season"></span>
+                    <i id="season-icon" class="fas fa-leaf"></i>
+                </div>
+            </div>
+            
+            <div id="chat-container" class="chat-container">
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p>Hello! I'm your AI Seasonal Cleaning Assistant. I can help you with cleaning advice, create to-do lists, and develop seasonal cleaning plans for homes or businesses. How can I assist you today?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <textarea id="user-input" placeholder="Ask me about cleaning, seasonal tasks, or request a cleaning plan..."></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="suggestions">
+                <h3>Suggestions:</h3>
+                <div class="suggestion-chips">
+                    <button class="suggestion-chip">Create a spring cleaning checklist</button>
+                    <button class="suggestion-chip">Weekly kitchen cleaning routine</button>
+                    <button class="suggestion-chip">How to clean hardwood floors</button>
+                    <button class="suggestion-chip">Office cleaning schedule for a small business</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loader"></div>
+        <p>Getting cleaning advice...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

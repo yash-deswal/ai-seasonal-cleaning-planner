@@ -275,6 +275,7 @@ body {
 .suggestions {
     padding: 15px 20px;
     background-color: var(--light-gray);
+    margin-bottom: 60px; /* Add margin to prevent overlap with the footer */
 }
 
 .suggestions h3 {
@@ -390,4 +391,15 @@ body {
     border-radius: 5px;
     overflow-x: auto;
     margin: 10px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
